@@ -1,0 +1,205 @@
+@import "variables", "mixins";
+
+/* === CONTENT HEADER STYLE ===*/
+#content {
+  background-color:$content-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  text-align: center;
+  background-color:$theme-color;
+  color:$content-color;
+}
+
+#header a {
+  color: white;
+}
+
+/* === CHAT STYLE ===*/
+
+#chat {
+background-color:$content-color;
+@include containers;
+}
+
+#userName {
+  background-color: $secondary-theme-color;
+  height: 8.5vh;
+  width:100%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+#messages {
+  text-align: center;
+  overflow-y: scroll;
+  width: 100%;
+  min-height: 74vh;
+  max-height: 74vh;
+}
+
+#messagesBox{
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  position: sticky;
+}
+
+.bottom{
+  float: left;
+  clear: both;
+}
+
+#chatForm {
+  background-color: $secondary-theme-color;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  height:8vh;
+  width:100%;
+
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 93%;
+}
+
+.chatFormBtn {
+  background-color:$theme-color;
+  color:$content-color;
+}
+
+/* === CHAT BUBLES STYLE ===*/
+
+.box3 {
+  @include buble($margin:$margin-buble-one,$color:$buuble-one-color, $float:right);
+  }
+  
+  .sb13:before {
+  @include bubleBeforeOne($color:$buuble-one-color);
+  }
+  
+  .box4 {
+    @include buble($margin:$margin-buble-two,$color:$buuble-two-color, $float:left);
+  }
+  
+  .sb14:before {
+    @include bubleBeforeTwo($color:$buuble-two-color);
+  }
+
+  .date{
+    font-size: 10px;
+    color: gray;
+    margin-top: 7px;
+  }
+
+/* === USERS LIST STYLE ===*/
+
+#users {
+background-color:$content-color;
+@include containers;
+}
+
+#user {
+  text-align: center;
+  overflow-y: scroll;
+  width: 100%;
+  @include containers;
+}
+
+/* === USERS LIST BOOTSTRAP STYLE ===*/
+
+.list-group-item{
+  border-radius: 0px !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+ 
+}
+.list-group-item:hover,a.list-group-item:focus 
+{text-decoration: none;background-color:$content-color;}
+
+.list-group.userList {
+  margin-bottom:0px;
+ }
+
+/* === SCROLL BAR STYLE ===*/
+
+.scrollbar::-webkit-scrollbar-track
+{
+
+	background-color:$scroll-bg-color;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 7px;
+	background-color:$scroll-bg-color;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	background-color:$theme-color;
+}
+
+/* === GLOBAL STYLES ===*/
+
+.imageUser{
+  margin-right: 2%;
+  width: 50px;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* === @media ===*/
+
+@media screen and (max-width: 480px) {
+  .box3{width: 250px;}
+  .box4{width: 250px;}
+  #heared{font-size: 12px;}
+  h1.one{font-size: 25px;}
+
+  
+
+
+}
+
+@media screen and (max-height: 610px) {
+  .imageUser{width: 40px;}
+  h1.one{font-size: 25px;}
+}
+
+/* === LOGIN PAGE STYLES ===*/
+
+.logInUsers {
+  margin: 35px;
+}
+
+.logInUsers p {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.logInUsers img {
+  width: 150px;
+}
+
+.hearedLogInUsers {
+  text-align: center;
+  background-color:$theme-color;
+  color:$content-color;
+  padding: 1px; 
+  margin-bottom: 60px;
+}
+
+.container-fluid.logInUserBody{
+  height: 100vh;
+  background-color: white !important;
+}
+

@@ -1,0 +1,43 @@
+
+@mixin buble ($margin, $color, $float){
+        width: 370px;
+        margin: $margin;
+        border-radius: 15px;
+        background:$color;
+        padding: 15px 10px 0px 10px;
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        float: $float;
+}
+
+@mixin bubleBeforeOne ($color){
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid $color;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $color;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
+  }
+
+  @mixin bubleBeforeTwo ($color){
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid $color;
+    border-top: 15px solid $color;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 0px;
+  }
+
+  @mixin containers {
+    min-height: 91.5vh;
+    max-height: 91.5vh;
+  }

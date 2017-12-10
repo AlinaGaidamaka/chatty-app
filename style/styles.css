@@ -1,0 +1,240 @@
+/* === CONTENT HEADER STYLE ===*/
+#content {
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  text-align: center;
+  background-color: #0277BD;
+  color: #f5f5f5;
+}
+
+#header a {
+  color: white;
+}
+
+/* === CHAT STYLE ===*/
+#chat {
+  background-color: #f5f5f5;
+  min-height: 91.5vh;
+  max-height: 91.5vh;
+}
+
+#userName {
+  background-color: #E0E0E0;
+  height: 8.5vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+#messages {
+  text-align: center;
+  overflow-y: scroll;
+  width: 100%;
+  min-height: 74vh;
+  max-height: 74vh;
+}
+
+#messagesBox {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  position: sticky;
+}
+
+.bottom {
+  float: left;
+  clear: both;
+}
+
+#chatForm {
+  background-color: #E0E0E0;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 8vh;
+  width: 100%;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 93%;
+}
+
+.chatFormBtn {
+  background-color: #0277BD;
+  color: #f5f5f5;
+}
+
+/* === CHAT BUBLES STYLE ===*/
+.box3 {
+  width: 370px;
+  margin: 2% 5% 0 10%;
+  border-radius: 15px;
+  background: #ffffff;
+  padding: 15px 10px 0px 10px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  float: right;
+}
+
+.sb13:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #ffffff;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
+}
+
+.box4 {
+  width: 370px;
+  margin: 2% 10% 0 5%;
+  border-radius: 15px;
+  background: #B3E5FC;
+  padding: 15px 10px 0px 10px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  float: left;
+}
+
+.sb14:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #B3E5FC;
+  border-top: 15px solid #B3E5FC;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
+
+.date {
+  font-size: 10px;
+  color: gray;
+  margin-top: 7px;
+}
+
+/* === USERS LIST STYLE ===*/
+#users {
+  background-color: #f5f5f5;
+  min-height: 91.5vh;
+  max-height: 91.5vh;
+}
+
+#user {
+  text-align: center;
+  overflow-y: scroll;
+  width: 100%;
+  min-height: 91.5vh;
+  max-height: 91.5vh;
+}
+
+/* === USERS LIST BOOTSTRAP STYLE ===*/
+.list-group-item {
+  border-radius: 0px !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+}
+
+.list-group-item:hover, a.list-group-item:focus {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.list-group.userList {
+  margin-bottom: 0px;
+}
+
+/* === SCROLL BAR STYLE ===*/
+.scrollbar::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 7px;
+  background-color: white;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0277BD;
+}
+
+/* === GLOBAL STYLES ===*/
+.imageUser {
+  margin-right: 2%;
+  width: 50px;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* === @media ===*/
+@media screen and (max-width: 480px) {
+  .box3 {
+    width: 250px;
+  }
+  .box4 {
+    width: 250px;
+  }
+  #heared {
+    font-size: 12px;
+  }
+  h1.one {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-height: 610px) {
+  .imageUser {
+    width: 40px;
+  }
+  h1.one {
+    font-size: 25px;
+  }
+}
+
+/* === LOGIN PAGE STYLES ===*/
+.logInUsers {
+  margin: 35px;
+}
+
+.logInUsers p {
+  margin: 25px;
+  font-size: 25px;
+}
+
+.logInUsers img {
+  width: 150px;
+}
+
+.hearedLogInUsers {
+  text-align: center;
+  background-color: #0277BD;
+  color: #f5f5f5;
+  padding: 1px;
+  margin-bottom: 60px;
+}
+
+.container-fluid.logInUserBody {
+  height: 100vh;
+  background-color: white !important;
+}
+ 
+
+ /*# sourceMappingURL= styles.css.map */
